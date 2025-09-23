@@ -44,6 +44,13 @@ fetch('public/data/abstract.json')
   .then(data => {
     document.getElementById('abstract-title').textContent = data.title;
     document.getElementById('abstract-text').textContent = data.abstract;
+    document.getElementById('abstract-schema').src = data.experiment_schema;
+    document.getElementById('abstract-schema_caption').textContent = data.schema_caption;
+    // Download link
+    const downloadLink = document.getElementById('abstract-schema-download');
+    downloadLink.href = data.experiment_schema;
+    // Optionally set the download filename (otherwise the filename in URL will be used)
+    downloadLink.download = "experiment_schema.png";
   })
   .catch(err => console.error('Error loading abstract.json', err));
 

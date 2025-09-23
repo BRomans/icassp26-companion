@@ -147,3 +147,30 @@ th, td {
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
+
+#abstract-schema-figure {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#abstract-schema {
+  margin: 2rem auto;
+  width: 100%;         /* full width of container */
+  max-width: 1200px;   /* up to 1200px wide */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#abstract-schema-caption {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+#abstract-schema-download {
+  font-size: 0.9rem;
+  color: #0073e6;
+  text-decoration: underline;
+}
+#abstract-schema-download:hover {
+  color: #004499;
+}
