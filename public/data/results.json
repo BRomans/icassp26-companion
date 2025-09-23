@@ -11,12 +11,12 @@
   ],
   "plots": [
     {
-      "caption": "Accuracy over epochs",
-      "image": "/images/plot1.png"
+      "caption": "Comparison of ROC AUC Scores | Pre-training phase.",
+      "image": "public/images/roc_resultsZero-Shot.png"
     },
     {
-      "caption": "Confusion Matrix",
-      "image": "/images/plot2.png"
+      "caption": "Comparison of ROC AUC Scores | Fine-Tuning phase (4 batches).",
+      "image": "public/images/roc_resultsFine-Tune I4.png"
     }
   ]
 }

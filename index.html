@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paper Companion Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Companion Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
+<!-- Navbar -->
+<nav class="navbar">
     <div class="nav-container">
-      <a href="#" class="nav-logo">My Paper</a>
-      <ul class="nav-links">
-        <li><a href="#" class="tab-link active" data-tab="home">Home</a></li>
-        <li><a href="#" class="tab-link" data-tab="about">About</a></li>
-      </ul>
+        <a href="#" class="nav-logo">ICASSP2026 - Michele Romani</a>
+        <ul class="nav-links">
+            <li><a href="#" class="tab-link active" data-tab="home">Home</a></li>
+            <li><a href="#" class="tab-link" data-tab="about">About</a></li>
+        </ul>
     </div>
-  </nav>
+</nav>
 
-  <!-- Main Content -->
-  <main>
+<!-- Main Content -->
+<main>
     <!-- Home Tab -->
     <section id="home" class="tab-content active">
-      <h1>Abstract</h1>
-      <p>
-        This is where your abstract text goes. You can edit directly in HTML or load dynamically.
-      </p>
+        <h1 id="abstract-title" class="paper-title"></h1>
+        <p id="abstract-text"></p>
 
-      <h2>Results</h2>
-      <table>
-        <thead>
-          <tr><th>Metric</th><th>Value</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Accuracy</td><td>95%</td></tr>
-          <tr><td>Precision</td><td>93%</td></tr>
-        </tbody>
-      </table>
+        <div id="results-section">
+            <!-- JS will inject tables here -->
+        </div>
 
-      <h2>Plots</h2>
-      <div id="plots">
-        <img src="public/images/roc_resultsZero-Shot.png" alt="Plot 1" />
-        <img src="public/images/roc_resultsFine-Tune%20I4.png" alt="Plot 2" />
-      </div>
+        <h2>Plots</h2>
+        <div id="plots-section">
+            <!-- JS will inject plots here -->
+        </div>
     </section>
 
     <!-- About Tab -->
     <section id="about" class="tab-content">
-      <h1>About the Authors</h1>
-      <div id="authors-container" class="authors-grid">
-        <!-- JS will populate author cards here -->
-      </div>
+        <h1 class="paper-title" >About the Authors</h1>
+        <div id="authors-container" class="authors-grid">
+            <!-- JS will populate author cards -->
+        </div>
     </section>
-  </main>
+</main>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

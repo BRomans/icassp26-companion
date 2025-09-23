@@ -1,4 +1,4 @@
 {
-  "title": "ICASSP 2026 Paper Title",
-  "abstract": "This is the abstract of our ICASSP 2026 paper..."
+  "title": "Explicit modelling of subject dependency in BCI decoding",
+  "abstract": "Brain–Computer Interfaces (BCIs) suffer from high inter-subject variability and limited labeled data, often requiring lengthy calibration phases. In this work, we present an end-to-end approach that explicitly models the subject dependency using lightweight convolutional neural networks (CNNs) conditioned on the subject's identity. Our method integrates hyperparameter optimization strategies that prioritize class imbalance and evaluates two conditioning mechanisms to adapt pre-trained models to unseen subjects with minimal calibration data. We benchmark three lightweight architectures on a time-modulated Event-Related Potentials (ERP) classification task, providing interpretable evaluation metrics and explainable visualizations of the learned representations. Results demonstrate improved generalization and data-efficient calibration, highlighting the scalability and practicality of subject-adaptive BCIs.\n"
 }

@@ -36,3 +36,52 @@ fetch('public/data/authors.json')
     });
   })
   .catch(err => console.error('Error loading authors.json', err));
+
+
+// ---- LOAD ABSTRACT ----
+fetch('public/data/abstract.json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('abstract-title').textContent = data.title;
+    document.getElementById('abstract-text').textContent = data.abstract;
+  })
+  .catch(err => console.error('Error loading abstract.json', err));
+
+// ---- LOAD RESULTS & PLOTS ----
+fetch('public/data/results.json')
+  .then(response => response.json())
+  .then(data => {
+    // Tables
+    const resultsSection = document.getElementById('results-section');
+    data.tables.forEach(tableData => {
+      const tableWrapper = document.createElement('div');
+      tableWrapper.className = 'table-wrapper';
+      let html = `<h2>${tableData.caption}</h2>`;
+      html += `<table><thead><tr>`;
+      tableData.headers.forEach(header => {
+        html += `<th>${header}</th>`;
+      });
+      html += `</tr></thead><tbody>`;
+      tableData.rows.forEach(row => {
+        html += `<tr>${row.map(cell => `<td>${cell}</td>`).join('')}</tr>`;
+      });
+      html += `</tbody></table>`;
+      tableWrapper.innerHTML = html;
+      resultsSection.appendChild(tableWrapper);
+    });
+
+    // Plots
+    const plotsSection = document.getElementById('plots-section');
+    data.plots.forEach(plot => {
+      const plotDiv = document.createElement('div');
+      plotDiv.className = 'plot-item';
+      plotDiv.innerHTML = `
+        <figure>
+          <img src="${plot.image}" alt="${plot.caption}">
+          <figcaption>${plot.caption}</figcaption>
+        </figure>
+      `;
+      plotsSection.appendChild(plotDiv);
+    });
+  })
+  .catch(err => console.error('Error loading results.json', err));
