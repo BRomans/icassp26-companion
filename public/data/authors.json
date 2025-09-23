@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Alice Smith",
+    "city": "New York",
+    "affiliation": "University of XYZ",
+    "email": "alice@example.com",
+    "googleScholar": "https://scholar.google.com/citations?user=xxxx",
+    "orcid": "https://orcid.org/0000-0001-2345-6789",
+    "github": "https://github.com/alicesmith",
+    "image": "/images/author1.jpg"
+  },
+  {
+    "name": "Bob Lee",
+    "city": "San Francisco",
+    "affiliation": "Tech Institute ABC",
+    "email": "bob@example.com",
+    "googleScholar": "https://scholar.google.com/citations?user=yyyy",
+    "orcid": "https://orcid.org/0000-0002-3456-7890",
+    "github": "https://github.com/boblee",
+    "image": "/images/author2.jpg"
+  }
+]

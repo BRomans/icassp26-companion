@@ -1,0 +1,22 @@
+{
+  "tables": [
+    {
+      "caption": "Performance comparison",
+      "headers": ["Method", "Accuracy", "F1 Score"],
+      "rows": [
+        ["Proposed", "92%", "0.90"],
+        ["Baseline", "85%", "0.83"]
+      ]
+    }
+  ],
+  "plots": [
+    {
+      "caption": "Accuracy over epochs",
+      "image": "/images/plot1.png"
+    },
+    {
+      "caption": "Confusion Matrix",
+      "image": "/images/plot2.png"
+    }
+  ]
+}
