@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -30,7 +30,22 @@ body {
     color: #fff;
     font-size: 1.5rem;
     text-decoration: none;
+    vertical-align: top;
+    display: flex;
+    align-items: center;
+    font-family: "Arial Rounded MT Bold", Arial, monospace;
 }
+
+.nav-logo:hover {
+    color: #ddd;
+}
+
+.nav-logo > img {
+    height: 6rem;
+    vertical-align: central;
+    margin-right: 2rem;
+}
+
 
 .nav-links {
     list-style: none;
@@ -148,29 +163,40 @@ th, td {
     margin-top: 0.5rem;
 }
 
+/* Abstract */
+#abstract-text {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
 #abstract-schema-figure {
-  text-align: center;
-  margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 #abstract-schema {
-  margin: 2rem auto;
-  width: 100%;         /* full width of container */
-  max-width: 1200px;   /* up to 1200px wide */
-  border: 1px solid #ccc;
-  border-radius: 6px;
+    margin: 2rem auto;
+    width: 100%; /* full width of container */
+    max-width: 1200px; /* up to 1200px wide */
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
 #abstract-schema-caption {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
 }
+
 #abstract-schema-download {
-  font-size: 0.9rem;
-  color: #0073e6;
-  text-decoration: underline;
+    font-size: 0.9rem;
+    color: #0073e6;
+    text-decoration: underline;
 }
+
 #abstract-schema-download:hover {
-  color: #004499;
+    color: #004499;
 }
