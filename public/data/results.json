@@ -1,7 +1,7 @@
 {
   "tables": [
     {
-      "caption": "Zero-shot and fine-tuning ROC AUC scores. Models denoted with H use the projection-based conditioning, while F use FiLM-based conditioning.",
+      "caption": "Zero-shot and fine-tuning Balanced Accuracy scores. Models denoted with H use the projection-based conditioning, while F use FiLM-based conditioning.",
       "headers": ["","Zero-Shot","FT I1","FT I2","FT I3","FT I4"],
       "rows": [
         ["<em>EEGNet</em>", "0.8075 ± 0.1318", "0.8269 ± 0.1164", "0.8271 ± 0.1162", "0.8263 ± 0.1164", "0.8259 ± 0.1166"],
@@ -18,12 +18,12 @@
   ],
   "plots": [
     {
-      "caption": "Comparison of ROC AUC Scores | Pre-training phase.",
-      "image": "public/images/roc_resultsZero-Shot.png"
+      "caption": "Comparison of Balanced Accuracy Scores | Pre-training phase.",
+      "image": "public/images/acc_resultsZero-Shot.png"
     },
     {
-      "caption": "Comparison of ROC AUC Scores | Fine-Tuning phase (4 batches).",
-      "image": "public/images/roc_resultsFine-Tune I4.png"
+      "caption": "Comparison of Balanced Accuracy Scores | Fine-Tuning phase (4 batches).",
+      "image": "public/images/acc_resultsFine-Tune I4.png"
     }
   ]
 }
