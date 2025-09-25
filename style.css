@@ -82,6 +82,7 @@ body {
 
 .paper-title {
     font-size: 2rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -151,6 +152,13 @@ th, td {
     gap: 1rem;
 }
 
+#plots-section-2row {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
 .plot-item img {
     width: 100%;
     border: 1px solid #ccc;
@@ -199,4 +207,24 @@ th, td {
 
 #abstract-schema-download:hover {
     color: #004499;
+}
+
+
+#moabb-comparison-figure {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#moabb-comparison {
+    margin: 2rem auto;
+    width: 100%; /* full width of container */
+    max-width: 1200px; /* up to 1200px wide */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#moabb-comparison-caption {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
 }

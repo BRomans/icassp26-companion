@@ -45,7 +45,7 @@ fetch('public/data/abstract.json')
     document.getElementById('abstract-title').textContent = data.title;
     document.getElementById('abstract-text').textContent = data.abstract;
     document.getElementById('abstract-schema').src = data.experiment_schema;
-    document.getElementById('abstract-schema_caption').textContent = data.schema_caption;
+    document.getElementById('abstract-schema-caption').textContent = data.schema_caption;
     // Download link
     const downloadLink = document.getElementById('abstract-schema-download');
     downloadLink.href = data.experiment_schema;
@@ -79,6 +79,9 @@ fetch('public/data/results.json')
 
     // Plots
     const plotsSection = document.getElementById('plots-section');
+    const plotSection2nd = document.getElementById('plots-section-2row');
+    document.getElementById('moabb-comparison').src = data.moabb_comparison_plot;
+    document.getElementById('moabb-comparison-caption').textContent = data.moabb_comparison_caption;
     data.plots.forEach(plot => {
       const plotDiv = document.createElement('div');
       plotDiv.className = 'plot-item';
@@ -89,6 +92,17 @@ fetch('public/data/results.json')
         </figure>
       `;
       plotsSection.appendChild(plotDiv);
+    });
+    data.plots2.forEach(plot => {
+      const plotDiv = document.createElement('div');
+      plotDiv.className = 'plot-item';
+      plotDiv.innerHTML = `
+        <figure>
+          <img src="${plot.image}" alt="${plot.caption}">
+          <figcaption>${plot.caption}</figcaption>
+        </figure>
+      `;
+      plotSection2nd.appendChild(plotDiv);
     });
   })
   .catch(err => console.error('Error loading results.json', err));
